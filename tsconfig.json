@@ -4,11 +4,13 @@
     "lib": [
       "DOM",
       "DOM.Iterable",
-      "ESNext"
+      "ESNext",
+      "esnext.asynciterable",
+      "esnext.disposable"
     ],
     "types": [],
     "allowJs": false,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
