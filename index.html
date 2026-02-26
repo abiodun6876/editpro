@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass Editor Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xs': '475px',
+          },
+          colors: {
+            primary: '#6366f1',
+            text: {
+              muted: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+    window.global = window;
+    window.module = { exports: {} };
+    window.exports = window.module.exports;
+    window.process = { env: { NODE_ENV: 'development' } };
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
